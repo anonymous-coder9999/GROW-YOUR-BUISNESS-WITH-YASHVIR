@@ -1,0 +1,6 @@
+{
+  "name": "GROW BUISNESS",
+  "description": "A modern 3D business website for GROW BUISNESS helping small businesses grow globally with services, WhatsApp ordering, interactive 3D WebGL visuals, and auth gate. Built by Yashvir Paul.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
