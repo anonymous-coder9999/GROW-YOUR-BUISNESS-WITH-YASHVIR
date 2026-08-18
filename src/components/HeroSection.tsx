@@ -35,7 +35,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               <Sparkles className="w-4 h-4 text-cyan-600 animate-pulse" />
               <span>Digital Growth Engine</span>
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
-              <span className="text-emerald-700 font-black">₹1,100 Only</span>
+              <span className="text-emerald-700 font-black">Meta Ads from ₹300 • Services at ₹1,100</span>
             </motion.div>
 
             {/* Main Hero Headline */}
@@ -58,7 +58,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-6 text-base sm:text-lg text-zinc-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium"
             >
-              Get high-converting websites, 24/7 AI automation bots, viral social media marketing, Google #1 search SEO, and 5-star review acceleration — engineered for rapid growth starting at just <strong className="text-emerald-700 font-bold">₹1,100</strong>.
+              Get high-converting websites, Meta & Instagram ads, 24/7 AI automation bots, Google #1 search SEO, and 5-star review acceleration — with Meta Ads starting at <strong className="text-indigo-700 font-bold">₹300 Starter Price</strong> and flat <strong className="text-emerald-700 font-bold">₹1,100</strong> for core growth services.
             </motion.p>
 
             {/* Key Value Points Badges */}
@@ -72,9 +72,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <CheckCircle2 className="w-4 h-4 text-cyan-600" />
                 <span>24-48h Delivery</span>
               </div>
-              <div className="flex items-center gap-1.5 text-purple-700">
-                <CheckCircle2 className="w-4 h-4 text-purple-600" />
-                <span>Zero Hidden Fees</span>
+              <div className="flex items-center gap-1.5 text-indigo-700">
+                <CheckCircle2 className="w-4 h-4 text-indigo-600" />
+                <span>₹300 Meta Ads Starter</span>
               </div>
               <div className="flex items-center gap-1.5 text-emerald-700">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600" />
@@ -94,19 +94,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 onClick={onExploreServices}
                 className="w-full sm:w-auto px-8 py-4 rounded-2xl font-black text-sm bg-black hover:bg-zinc-800 text-white shadow-lg transform hover:-translate-y-0.5 active:scale-95 transition-all flex items-center justify-center gap-2"
               >
-                <span className="tracking-wide">Explore Services (₹1,100)</span>
+                <span className="tracking-wide">Explore Services & Plans</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
 
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto px-8 py-4 rounded-2xl font-bold text-sm bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 transition-all flex items-center justify-center gap-2"
+              <button
+                onClick={onOpenOrderModal}
+                className="w-full sm:w-auto px-8 py-4 rounded-2xl font-bold text-sm bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
                 <Phone className="w-4 h-4 text-emerald-700" />
-                <span>Order via WhatsApp (9394389413)</span>
-              </a>
+                <span>Order Now (9394389413)</span>
+              </button>
             </motion.div>
 
             {/* Social Proof / Metrics Stats Ticker */}
@@ -121,12 +119,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <p className="text-xs text-cyan-700 font-semibold mt-0.5">Businesses Scaled</p>
               </div>
               <div>
-                <p className="text-2xl sm:text-3xl font-black font-heading text-emerald-700">₹1,100</p>
-                <p className="text-xs text-emerald-700 font-semibold mt-0.5">Starter Price</p>
+                <p className="text-2xl sm:text-3xl font-black font-heading text-indigo-700">₹300</p>
+                <p className="text-xs text-indigo-700 font-semibold mt-0.5">Meta Ads Starter</p>
               </div>
               <div>
-                <p className="text-2xl sm:text-3xl font-black font-heading text-purple-700">99.8%</p>
-                <p className="text-xs text-pink-700 font-semibold mt-0.5">Client Retention</p>
+                <p className="text-2xl sm:text-3xl font-black font-heading text-emerald-700">₹1,100</p>
+                <p className="text-xs text-emerald-700 font-semibold mt-0.5">Standard Services</p>
               </div>
             </motion.div>
 
@@ -147,4 +145,3 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
     </section>
   );
 };
-

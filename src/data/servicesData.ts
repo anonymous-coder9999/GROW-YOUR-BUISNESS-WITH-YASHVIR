@@ -1,4 +1,4 @@
-import { Service } from '../types';
+import { Service, DurationTier } from '../types';
 
 export const SERVICES_DATA: Service[] = [
   {
@@ -95,5 +95,27 @@ export const SERVICES_DATA: Service[] = [
       'Review Management & QR Flyers',
       'Increased Phone Call Inquiries'
     ]
+  },
+  {
+    id: 'meta-ads',
+    title: 'Meta Ads',
+    subtitle: 'High-ROI Facebook & Instagram Ads',
+    description: 'Laser-targeted Facebook and Instagram ad campaigns engineered to generate qualified buyer leads, store visits, and explosive sales.',
+    price: '₹300',
+    originalPrice: '₹1,999',
+    popular: true,
+    badge: 'STARTER PRICE',
+    icon: 'Target',
+    category: 'ads',
+    features: [
+      'Pixel & Conversions API (CAPI) Setup',
+      'Laser-Focused Audience & Geo-Targeting',
+      'High-Converting Ad Creatives & Copy',
+      'Instant WhatsApp Lead Routing',
+      'A/B Split Testing & Budget Optimization'
+    ]
   }
 ];
+
+export const META_ADS_DURATION_TIERS: DurationTier[] = [];
+export const DEFAULT_DURATION_TIERS = META_ADS_DURATION_TIERS;

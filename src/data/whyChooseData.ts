@@ -11,11 +11,11 @@ export const WHY_CHOOSE_DATA: FeatureHighlight[] = [
   },
   {
     id: '2',
-    title: 'Unbeatable Starter Price',
-    description: 'Get enterprise-level digital growth services starting at an unbelievable price of just ₹1,100.',
+    title: 'Duration Plans & Negotiable Pricing',
+    description: 'Flexible plans based on duration (1, 3, 6, 12 months) with 100% negotiable pricing tailored to your budget.',
     icon: 'ShieldCheck',
-    badge: 'JUST ₹1,100 STARTER',
-    stat: '₹1,100 Only'
+    badge: '100% NEGOTIABLE',
+    stat: 'From ₹1,100'
   },
   {
     id: '3',

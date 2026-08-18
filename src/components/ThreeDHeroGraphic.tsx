@@ -23,14 +23,16 @@ export const ThreeDHeroGraphic: React.FC = () => {
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-ping" />
               DIGITAL SCALE STUDIO
             </span>
-            <span className="text-xs font-black text-emerald-700">₹1,100 STARTER</span>
+            <span className="text-[11px] font-black text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+              ₹300 STARTER
+            </span>
           </div>
 
           <h3 className="text-2xl font-black text-zinc-900 font-heading tracking-tight">
             Small Business Growth Engine
           </h3>
           <p className="text-xs text-cyan-800 mt-1 font-semibold">
-            Automated Website, 24/7 AI Chatbot & Local SEO Systems
+            Websites, Meta Ads, 24/7 AI Automation & Local SEO Systems
           </p>
         </div>
 
@@ -38,10 +40,10 @@ export const ThreeDHeroGraphic: React.FC = () => {
         <div className="my-6 p-4 rounded-2xl bg-zinc-50 border border-zinc-200 flex items-center justify-between shadow-xs">
           <div>
             <span className="text-[10px] uppercase font-bold text-zinc-500 block tracking-wider">
-              Average Client Impact
+              Transparent Pricing
             </span>
-            <span className="text-2xl font-black text-cyan-800">
-              10x Digital Growth
+            <span className="text-xl font-black text-cyan-800">
+              Starts From ₹300
             </span>
           </div>
           <div className="w-11 h-11 rounded-xl bg-cyan-100 border border-cyan-200 flex items-center justify-center text-cyan-800">
@@ -54,6 +56,10 @@ export const ThreeDHeroGraphic: React.FC = () => {
           <div className="flex items-center gap-2.5">
             <CheckCircle2 className="w-4 h-4 text-cyan-600 shrink-0" />
             <span>High-Speed Website Development (<strong className="text-emerald-700 font-black">₹1,100</strong>)</span>
+          </div>
+          <div className="flex items-center gap-2.5">
+            <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0" />
+            <span>Meta & Instagram Ads (<strong className="text-indigo-700 font-black">₹300 Starter Price</strong>)</span>
           </div>
           <div className="flex items-center gap-2.5">
             <CheckCircle2 className="w-4 h-4 text-purple-600 shrink-0" />
@@ -82,4 +88,3 @@ export const ThreeDHeroGraphic: React.FC = () => {
     </div>
   );
 };
-

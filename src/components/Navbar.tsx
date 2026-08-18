@@ -63,6 +63,9 @@ export const Navbar: React.FC<NavbarProps> = ({ user, onOpenAuth, onOpenOrderMod
           <a href="#faq" className="hover:text-black transition-colors">
             FAQ
           </a>
+          <a href="#contact" className="hover:text-black transition-colors text-cyan-700 font-extrabold flex items-center gap-1">
+            <span>Contact</span>
+          </a>
         </nav>
 
         {/* Action Buttons */}
@@ -168,6 +171,13 @@ export const Navbar: React.FC<NavbarProps> = ({ user, onOpenAuth, onOpenOrderMod
             className="block text-sm font-semibold text-zinc-800 hover:text-cyan-600"
           >
             FAQ
+          </a>
+          <a
+            href="#contact"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block text-sm font-bold text-cyan-600 hover:text-cyan-700"
+          >
+            Contact FormSubmit
           </a>
 
           <div className="pt-4 border-t border-zinc-200 flex flex-col gap-3">

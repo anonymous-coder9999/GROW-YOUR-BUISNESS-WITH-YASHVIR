@@ -49,6 +49,7 @@ export const Footer: React.FC = () => {
               <li><a href="#services" className="hover:text-zinc-900 transition-colors">Website Development</a></li>
               <li><a href="#services" className="hover:text-zinc-900 transition-colors">AI Automation</a></li>
               <li><a href="#services" className="hover:text-zinc-900 transition-colors">Social Media Management</a></li>
+              <li><a href="#services" className="hover:text-zinc-900 transition-colors">Meta Ads</a></li>
               <li><a href="#services" className="hover:text-zinc-900 transition-colors">SEO Optimisation Service</a></li>
               <li><a href="#services" className="hover:text-zinc-900 transition-colors">Google Top Review Service</a></li>
             </ul>

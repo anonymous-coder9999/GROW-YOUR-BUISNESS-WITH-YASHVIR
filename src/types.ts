@@ -5,6 +5,17 @@ export interface User {
   avatar?: string;
 }
 
+export interface DurationTier {
+  id: '1mo' | '3mo' | '6mo' | '12mo' | 'custom';
+  label: string;
+  durationName: string;
+  months: number;
+  price: number;
+  originalPrice: number;
+  monthlyEquivalent: number;
+  savingsBadge?: string;
+}
+
 export interface Service {
   id: string;
   title: string;
@@ -15,8 +26,11 @@ export interface Service {
   badge?: string;
   popular?: boolean;
   icon: string;
-  category: 'web' | 'ai' | 'social' | 'seo' | 'reviews';
+  category: 'web' | 'ai' | 'social' | 'seo' | 'reviews' | 'ads';
   features: string[];
+  durationTiers?: DurationTier[];
+  isNegotiable?: boolean;
+  negotiationNote?: string;
 }
 
 export interface Testimonial {

